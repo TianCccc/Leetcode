@@ -39,4 +39,9 @@ def myAtoi(str):
         return INT_MAX
     return INT_MIN if ans<INT_MIN else ans
 
+def myAtoi_2(str):
+    # 正则表达式
+    import re
+    return max(min(int(*re.findall('^[\+\-]?\d+', str.lstrip())), 2**31 - 1), -2**31)
+
 print(myAtoi("4-2"))
