@@ -38,3 +38,5 @@ def myAtoi(str):
     if ans>INT_MAX:
         return INT_MAX
     return INT_MIN if ans<INT_MIN else ans
+
+print(myAtoi("4-2"))
