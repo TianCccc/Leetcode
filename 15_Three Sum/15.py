@@ -25,7 +25,7 @@ def threeSum(nums):
         while l < r:
             tmp = nums[i] + nums[l] + nums[r]
             if tmp == 0:
-                result.append(nums[i], nums[l], nums[r])
+                result.append([nums[i], nums[l], nums[r]])
                 while l+1 < r and nums[l] == nums[l+1]:
                     l += 1
                 l += 1
@@ -38,3 +38,5 @@ def threeSum(nums):
                 r -= 1
     
     return result
+
+print(threeSum([0, 0, 0]))
