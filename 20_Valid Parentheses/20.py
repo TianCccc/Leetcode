@@ -27,4 +27,4 @@ def isValid(s):
     
     return not stack
 
-print(isValid("()"))
+print(isValid("([)]"))
