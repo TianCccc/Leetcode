@@ -11,12 +11,8 @@ From the top-left corner, there are a total of 3 ways to reach the bottom-right 
 
 def uniquePaths(m, n):
     # initialize
-    dp = [[0 for i in range(m)] for j in range(n)]
+    dp = [[1 for i in range(m)] for j in range(n)]
 
-    for i in range(m):
-        dp[0][i] = 1
-    for j in range(n):
-        dp[j][0] = 1
     dp[0][0] = 0
     for i in range(1, n):
         for j in range(1, m):
